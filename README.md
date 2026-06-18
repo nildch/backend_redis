@@ -18,3 +18,6 @@ Para testar :
 
 ``` curl http://localhost:3000/api/products ```
 
+# Concluindo
+
+As duas entidades contempladas, usuários e produtos, seguiram esse mesmo fluxo. Toda a infraestrutura foi orquestrada via docker-compose, com os serviços da aplicação, banco e cache rodando em containers isolados e se comunicando pela mesma rede interna. O sistema foi implantado no Railway e as rotas responderam corretamente, confirmando o funcionamento do cache através do campo fromCache retornado nas respostas da API.
